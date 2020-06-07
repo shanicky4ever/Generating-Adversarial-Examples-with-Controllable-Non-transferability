@@ -74,7 +74,7 @@ Suppose attack `resnet50` as white-box model, to protect black-box `vgg16bn` whi
 
 Firstly, attack with `resenet50`,
 
-    python TC --mode get_advs
+    python TC.py --mode get_advs
 
 Then, train the classifier,
 
