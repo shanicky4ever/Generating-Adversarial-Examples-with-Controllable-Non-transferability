@@ -1,0 +1,4 @@
+pytorch
+torchvision
+h5py
+tqdm

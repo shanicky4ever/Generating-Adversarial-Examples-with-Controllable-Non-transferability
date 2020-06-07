@@ -1,0 +1,6 @@
+dataset/
+.vscode/
+**/__pycache__
+exp_*
+tmp_*
+**/state_dicts
