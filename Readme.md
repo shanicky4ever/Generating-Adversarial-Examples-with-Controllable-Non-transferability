@@ -14,9 +14,29 @@ You can run
 
 to install the packages, or you can install them by conda.
 
+
 ## Dataset
 
-In this code, we can run with Cifar10 and Imagenet. Cifar10 need not do anything more, the dataset will be downloaded automatically. Because of torchvision no longer provide Imagenet api directly, we use `ImageFolder` instead. If you want to run with Imagenet, please make a dir `dataset/imagenet` and download ILSVRC2012 dataset from [Imagenet website](http://www.image-net.org/challenges/LSVRC/2012/downloads) in it, extract the tar file and run [valprep.sh](https://raw.githubusercontent.com/soumith/imagenetloader.torch/master/valprep.sh) to preprocess.
+In this code, we can run with Cifar10 and Imagenet. 
+
+Cifar10 need not do anything more, the dataset will be downloaded automatically.
+
+Because of torchvision no longer provide Imagenet api directly, we use `ImageFolder` instead. If you want to run with Imagenet, please make a dir `dataset/imagenet` and download ILSVRC2012 dataset from [Imagenet website](http://www.image-net.org/challenges/LSVRC/2012/downloads) in it, extract the tar file and run [valprep.sh](https://raw.githubusercontent.com/soumith/imagenetloader.torch/master/valprep.sh) to preprocess.
+
+It may need to run
+
+    mkdir dataset
+
+when you run this code first time.
+
+
+## Models
+
+If you run with `Imagenet`, the pretrained models can be downloaded automatically. 
+
+If you run with `Cifar10`, you can download pretrained models from [here](https://github.com/kuangliu/pytorch-cifar), or you can train them yourselves. Besides the experiment of `similiar family`, other experiments only need `resnet50.pt`, `vgg16bn.pt` and `densenet121.pt`. In `similiar family` experiments, `resnet18.pt`, `resnet34.pt`, `vgg11bn.pt` and `vgg19bn.pt` are also need to be downloaded. These weight files should be placed in `models/cifar10_models/state_dicts`.
+
+I also uploade these `Cifar10` models to my server(with no identify information), you can download them [here](https://64.227.107.164/files/state_dicts/).
 
 ## Run
 
